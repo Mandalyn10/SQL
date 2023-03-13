@@ -1,0 +1,25 @@
+--create a store database
+
+CREATE TABLE BestSellers (id INTEGER PRIMARY KEY, Price INTEGER, Title TEXT, Genre TEXT, Author TEXT);
+
+INSERT INTO BestSellers VALUES (1,  29.00,"Storm Watch", "Fiction", "CJ Box");
+INSERT INTO BestSellers VALUES (2, 28.00, "The Courage to Be Free", "Non Fiction", "Ron DeSantis");
+INSERT INTO BestSellers VALUES (3, 5.99, "Annoyed At First Sight", "Romance", "Lani Lynn Vale");
+INSERT INTO BestSellers VALUES (4, 22.39, "A Day of Fallen Night", "Fantasy", "Samantha Shannon");
+INSERT INTO BestSellers VALUES (5, 16.99, "The Sun and Its Shade", "Fantasy", "Piper CJ");
+INSERT INTO BestSellers VALUES (6, 16.99, "Wraiths Revenge", "Fiction", "Keri Arthur");
+INSERT INTO BestSellers VALUES (7, 17.99, "What Moves The Dead", "Horror", "T Kingsfisher");
+INSERT INTO BestSellers VALUES (8, 24.99, "Malice House", "Horror", "Megan Shepherd");
+INSERT INTO BestSellers VALUES (9, 28.00, "Walking With Sam", "NonFiction", "Andrew McCarthy");
+INSERT INTO BestSellers VALUES (10, 23.99, "Fast Like A Girl", "NonFiction", "Dr. Mindy Pelz");
+INSERT INTO BestSellers VALUES (11, 15.99, "The Paris Apartment", "Mystery and Crime", "Lucy Foley");
+INSERT INTO BestSellers VALUES (12, 23.99, "All Good People Here", "Mystery and Crime", "Ashley Flowers");
+INSERT INTO BestSellers VALUES (13, 23.99, "Girl Forgotten", "Mystery and Crime", "Karin SLaughter");
+INSERT INTO BestSellers VALUES (14, 11.49, "Better Than the Movies", "Romance", "Lynn Painter");
+INSERT INTO BestSellers VALUES (15, 16.99, "The Do-Over", "Romance", "Lynn Painter");
+
+--display the database order by Best Seller price higher than $12.00
+
+SELECT * FROM BestSellers;
+SELECT * FROM BestSellers WHERE Price > 12 ORDER BY Genre
+
